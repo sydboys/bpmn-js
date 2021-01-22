@@ -786,7 +786,8 @@ describe('behavior - LabelBehavior', function() {
         // then
         expect(label).to.exist;
 
-        expect(label).to.have.position({ x: 681, y: 287 });
+        expect(label.x).to.be.closeTo(681, 1);
+        expect(label.y).to.be.closeTo(287, 1);
       }
     ));
 
